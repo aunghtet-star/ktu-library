@@ -1,0 +1,19 @@
+/* your styles go here */
+.action-icon a{
+    padding : 7px;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+.action-icon a:hover{
+    background-color :grey;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 25px
+}
+
+.img-size{
+    width : 50px;
+    height : 60px;
+}

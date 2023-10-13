@@ -5,7 +5,7 @@
             <h5 class="p-0 mt-3"><a>New released</a></h5>
             <div class="row slide">
                 @foreach($books as $book)
-                    <div class="col-md-2 col-3">
+                    <div class="col-md-2 col-4">
                         <div class="card mt-2">
                             <img class="img-cover" src="{{$book->picture}}" alt="">
                             <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
@@ -15,59 +15,14 @@
                         </div>
                     </div>
                 @endforeach
-                    <div class="col-md-2 col-3">
-                        <div class="card mt-2">
-                            <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                            <span class="fa fa-star checked"><a>3.4</a></span>
-                            <div>
-                                <a>Romeo Julie3</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-3">
-                        <div class="card mt-2">
-                            <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                            <span class="fa fa-star checked"><a>3.4</a></span>
-                            <div>
-                                <a>Romeo Julie3</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-3">
-                        <div class="card mt-2">
-                            <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                            <span class="fa fa-star checked"><a>3.4</a></span>
-                            <div>
-                                <a>Romeo Julie3</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-3">
-                        <div class="card mt-2">
-                            <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                            <span class="fa fa-star checked"><a>3.4</a></span>
-                            <div>
-                                <a>Romeo Julie3</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-3">
-                        <div class="card mt-2">
-                            <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                            <span class="fa fa-star checked"><a>3.4</a></span>
-                            <div>
-                                <a>Romeo Julie3</a>
-                            </div>
-                        </div>
-                    </div>
             </div>
         </div>
 
         <div class="col-md-12">
-            <h5 class="p-0 mt-3"><a>Short Story</a></h5>
+            <h5 class="p-0 mt-3"><a>Academic & Education</a></h5>
             <div class="row">
-                @foreach($short_stories as $book)
-                <div class="col-md-2 col-3">
+                @foreach($education as $book)
+                <div class="col-md-2 col-4">
                     <div class="card mt-2">
                         <img class="img-cover" src="{{$book->picture}}" alt="">
                         <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
@@ -77,77 +32,14 @@
                     </div>
                 </div>
                 @endforeach
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet2</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Julie3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet4</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Julie5</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="col-md-12">
-            <h5 class="p-0 mt-3"><a>Lectures</a></h5>
+            <h5 class="p-0 mt-3"><a>Biography</a></h5>
             <div class="row">
-                @foreach($short_stories as $book)
-                    <div class="col-md-2 col-3">
+                @foreach($biography as $book)
+                    <div class="col-md-2 col-4">
                         <div class="card mt-2">
                             <img class="img-cover" src="{{$book->picture}}" alt="">
                             <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
@@ -157,77 +49,14 @@
                         </div>
                     </div>
                 @endforeach
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet2</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Julie3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet4</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Julie5</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="col-md-12">
-            <h5 class="p-0 mt-3"><a>သုတစာပေ</a></h5>
+            <h5 class="p-0 mt-3"><a>Business</a></h5>
             <div class="row">
-                @foreach($short_stories as $book)
-                    <div class="col-md-2 col-3">
+                @foreach($business as $book)
+                    <div class="col-md-2 col-4">
                         <div class="card mt-2">
                             <img class="img-cover" src="{{$book->picture}}" alt="">
                             <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
@@ -237,77 +66,14 @@
                         </div>
                     </div>
                 @endforeach
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet2</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Julie3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet4</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Julie5</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="col-md-12">
-            <h5 class="p-0 mt-3"><a>ရသစာပေ</a></h5>
+            <h5 class="p-0 mt-3"><a>Health</a></h5>
             <div class="row">
-                @foreach($short_stories as $book)
-                    <div class="col-md-2 col-3">
+                @foreach($health as $book)
+                    <div class="col-md-2 col-4">
                         <div class="card mt-2">
                             <img class="img-cover" src="{{$book->picture}}" alt="">
                             <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
@@ -317,70 +83,94 @@
                         </div>
                     </div>
                 @endforeach
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet2</a>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <h5 class="p-0 mt-3"><a>Technology</a></h5>
+            <div class="row">
+                @foreach($technology as $book)
+                    <div class="col-md-2 col-4">
+                        <div class="card mt-2">
+                            <img class="img-cover" src="{{$book->picture}}" alt="">
+                            <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
+                            <div>
+                                <a href="{{url('details/'.$book->id)}}">{{$book->name}}</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Julie3</a>
+                @endforeach
+
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <h5 class="p-0 mt-3"><a>Science</a></h5>
+            <div class="row">
+                @foreach($science as $book)
+                    <div class="col-md-2 col-4">
+                        <div class="card mt-2">
+                            <img class="img-cover" src="{{$book->picture}}" alt="">
+                            <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
+                            <div>
+                                <a href="{{url('details/'.$book->id)}}">{{$book->name}}</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet4</a>
+                @endforeach
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <h5 class="p-0 mt-3"><a>Fiction</a></h5>
+            <div class="row">
+                @foreach($fiction as $book)
+                    <div class="col-md-2 col-4">
+                        <div class="card mt-2">
+                            <img class="img-cover" src="{{$book->picture}}" alt="">
+                            <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
+                            <div>
+                                <a href="{{url('details/'.$book->id)}}">{{$book->name}}</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Julie5</a>
+                @endforeach
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <h5 class="p-0 mt-3"><a>Cartoon</a></h5>
+            <div class="row">
+                @foreach($cartoon as $book)
+                    <div class="col-md-2 col-4">
+                        <div class="card mt-2">
+                            <img class="img-cover" src="{{$book->picture}}" alt="">
+                            <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
+                            <div>
+                                <a href="{{url('details/'.$book->id)}}">{{$book->name}}</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
+                @endforeach
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <h5 class="p-0 mt-3"><a>History</a></h5>
+            <div class="row">
+                @foreach($history as $book)
+                    <div class="col-md-2 col-4">
+                        <div class="card mt-2">
+                            <img class="img-cover" src="{{$book->picture}}" alt="">
+                            <span class="fa fa-star checked"><a>{{$book->rating}}</a></span>
+                            <div>
+                                <a href="{{url('details/'.$book->id)}}">{{$book->name}}</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-3">
-                    <div class="card mt-2">
-                        <img class="img-cover" src="https://tse1.mm.bing.net/th?id=OIP.axjwI7IvszJRULBvjpRVnwAAAA&pid=Api" alt="">
-                        <span class="fa fa-star checked"><a>3.4</a></span>
-                        <div>
-                            <a>Romeo Juliet</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
+
 @endsection

@@ -8,8 +8,10 @@
                 </div>
 
                 <div class="mt-3 mb-3">
+
+                    <span class="small font-weight-normal text-secondary"><i class="fa-solid fa-calendar"></i> {{ (new Carbon\Carbon($book->created_at))->diffForHumans() }}</span>
                     <h4>{{$book->name}}</h4>
-                    <h5 class="text-success">{{$book->author}}</h5>
+                    <span class="small font-italic">by</span><h5 class="text-success">{{$book->author}}</h5>
                     <p>{{$book->description}}</p>
 
                      <div class="d-flex justify-content-around">

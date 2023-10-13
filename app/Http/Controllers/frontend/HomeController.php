@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
         public function index(){
-            $books = Book::latest(8);
+            $books = Book::latest()->paginate(8);
 
             $education = Book::where('article_id',1)->get();
             $biography = Book::where('article_id',2)->get();

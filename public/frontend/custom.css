@@ -27,7 +27,8 @@
 
 .img-cover{
     background-size : contain;
-    height: 185px;
+    min-height: 185px;
+    max-height : 190px;
 }
 
 .card{

@@ -14,7 +14,7 @@ class HomeController extends Controller
 
             $education = Book::where('article_id',1)->get();
             $biography = Book::where('article_id',2)->get();
-            $business = Book::where('article_id',3)->get();
+            $business = Book::where('article_id',4)->get();
             $health = Book::where('article_id',5)->get();
             $technology = Book::where('article_id',6)->get();
             $science = Book::where('article_id',8)->get();

@@ -27,6 +27,6 @@ class RatingController extends Controller
             ]);
         }
 
-        return redirect()->back()->with('done','Thanks for your rating');
+        return redirect('/')->with('done','Thanks for your rating');
     }
 }

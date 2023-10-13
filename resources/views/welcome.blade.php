@@ -18,6 +18,7 @@
             </div>
         </div>
 
+
         <div class="col-md-12">
             <h5 class="p-0 mt-3"><a>Academic & Education</a></h5>
             <div class="row">
@@ -173,4 +174,30 @@
         </div>
     </div>
 
+@endsection
+
+
+@section('script')
+    <script>
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+
+        @if(session('done'))
+        Toast.fire({
+            icon: 'success',
+            title: '{{session('done')}}'
+        })
+        @endif()
+    </script>
 @endsection

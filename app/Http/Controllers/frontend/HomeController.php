@@ -30,17 +30,11 @@ class HomeController extends Controller
         public function search(Request $request){
 
             $searchData = '%'.$request->search.'%';
-            $articles =Article::all();
             $books = Book::where('name','like',$searchData)
                 ->orwhere('author','like',$searchData)
-//                ->orWhereHas('articles',function ($articles) use ($searchData) {
-//                    $articles->where('name','like',$searchData);
-//                })
+                ->orwhere('description','like',$searchData)
                 ->simplepaginate(10);
 
-
-            return view('welcome',compact('articles','books'));
-
-
+            return view('frontend.home.search',compact('books'));
         }
 }

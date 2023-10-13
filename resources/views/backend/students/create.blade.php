@@ -26,6 +26,12 @@
                                <label for="">Phone</label>
                                <input type="text" class="form-control" name="phone" >
                            </div>
+
+                           <div class="mb-3">
+                               <label for="">Password</label>
+                               <input type="text" class="form-control" name="password" >
+                           </div>
+
                            <button class="btn btn-primary" type="submit">Submit</button>
                        </div>
                    </form>

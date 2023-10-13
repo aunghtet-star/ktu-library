@@ -35,7 +35,7 @@
         <div class="flex items-center justify-end mt-4">
 
             <div>
-                <a href="{{route('register')}}" class="mr-5" > haven't registerd?</a>
+                <a href="{{route('register')}}" class="mr-5" style="text-decoration-line: underline;"> haven't registerd?</a>
             </div>
 
 

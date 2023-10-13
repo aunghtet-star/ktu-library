@@ -3,11 +3,16 @@
     min-height : 100vh;
 }
 
+.logo{
+    width :45px;
+    height :45px;
+}
+
 .navbar{
     background : #262b36 !important;
 }
 
-.main nav a,.main .card a{
+.main nav a,.main .card a,.main h5 a{
     color : #706a5e !important;
 }
 
@@ -17,6 +22,7 @@
 
 .img-cover{
     background-size : contain;
+    min-height: 125px;
 }
 
 .card{

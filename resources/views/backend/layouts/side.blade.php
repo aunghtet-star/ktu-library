@@ -4,7 +4,7 @@
         <!-- Sidebar Header    -->
         <div class="sidebar-header d-flex align-items-center justify-content-center p-3 mb-3">
             <!-- User Info-->
-            <div class="sidenav-header-inner text-center"><img class="img-fluid rounded-circle avatar mb-3" src="https://tse3.mm.bing.net/th?id=OIP.hhvqM3zo1tKmDYkXNib9qQHaHd&pid=Api" alt="person">
+            <div class="sidenav-header-inner text-center"><img class="img-fluid rounded-circle avatar mb-3" src="{{asset('logo/logo.jpg')}}" alt="person">
                 <h2 class="h5 text-white text-uppercase mb-0">TU Kse Library</h2>
                 <p class="text-sm mb-0 text-muted">Web Developer</p>
             </div>

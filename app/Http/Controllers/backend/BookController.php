@@ -72,12 +72,14 @@ class BookController extends Controller
      */
     public function store(BookRequest $request)
     {
+
         $link_name = null;
         if($request->hasFile('link')){
             $link_file = $request->file('link');
             $link_name = uniqid().'_'. time().'.'.$link_file->getClientOriginalExtension();
-            $link_file->move(public_path('book'), $link_name);
+            Storage::disk('public')->put('book/'.$link_name,file_get_contents($link_file));
         }
+
 
         $this->model->create([
             'name' => $request->name,
@@ -124,7 +126,28 @@ class BookController extends Controller
      */
     public function update(BookRequest $request, $id)
     {
-        $this->model->find($id)->update($request->except('proengsoft_jsvalidation'));
+        //dd($request->all());
+
+        $book = Book::find($id);
+        $link_name = $book->link;
+
+        if($request->hasFile('link')){
+
+            Storage::disk('public')->delete('book/'.$book->link);
+            $link_file = $request->file('link');
+            $link_name = uniqid().'_'. time().'.'.$link_file->getClientOriginalExtension();
+            Storage::disk('public')->put('book/'.$link_name,file_get_contents($link_file));
+        }
+
+         $book->update([
+            'name' => $request->name,
+            'article_id' => $request->article_id,
+            'author' => $request->author,
+            'picture' => $request->picture,
+            'link' => $link_name,
+            'description' => $request->description
+        ]);
+
         return redirect('admin/books')->with('update', 'Updated Successfully');
     }
 

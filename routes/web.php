@@ -23,13 +23,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $books = Book::all();
+Route::get('/',[App\Http\Controllers\frontend\HomeController::class,'index']);
+Route::post('/search',[App\Http\Controllers\frontend\HomeController::class,'search']);
 
-
-
-    return view('welcome',compact('books'));
-});
 
 Route::middleware('auth')->group(function (){
     Route::get('/details/{id}',[DetailController::class,'detail']);

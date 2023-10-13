@@ -5,7 +5,7 @@
             <h4 class="text-center mt-3">Books Edit Form</h4>
             <div class="card-body">
                 <div class="col-md-12">
-                    <form action="{{route('books.update',$book->id)}}" method="post" id="books-update">
+                    <form action="{{route('books.update',$book->id)}}" method="post" enctype="multipart/form-data" id="books-update">
                         @csrf
                         @method('PATCH')
                         <div class="card-body">
@@ -29,7 +29,7 @@
 
                             <div class="mb-3">
                                 <label for="">Author</label>
-                                <input type="text" class="form-control" value="{{$book->author}}" name="name">
+                                <input type="text" class="form-control" value="{{$book->author}}" name="author">
                             </div>
 
                             <div class="mb-3">
@@ -39,8 +39,14 @@
 
                             <div class="mb-3">
                                 <label for="">Link</label>
-                                <input type="text" class="form-control" value="{{$book->link}}" name="link">
+                                <input type="file" class="form-control" name="link">
                             </div>
+
+                            <div class="mb-3">
+                                <label for="">Description</label>
+                                <textarea class="form-control" name="description" id="" cols="30" rows="5">{{$book->description}}</textarea>
+                            </div>
+
                             <button class="btn btn-primary" type="submit">Submit</button>
                         </div>
                     </form>

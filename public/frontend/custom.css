@@ -9,7 +9,8 @@
     border-radius : 100%;
 }
 
-.card {
+.row .card {
+    min-height : 200px !important;
     min-height : 200px !important;
     object-fit: cover
 }

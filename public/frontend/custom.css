@@ -10,6 +10,7 @@
 
 .card {
     min-height : 200px !important;
+    max-height: 208px !important;
 }
 
 .navbar{

@@ -1,8 +1,8 @@
 @extends('frontend.layouts.app')
 @section('content')
     <div class="container mt-5 text-white">
-        <div class="col-md-12 col-12 d-flex justify-content-center">
-            <div class="col-8">
+        <div class="col-md-12 d-flex justify-content-center">
+            <div class="col-md-3 col-10">
                 <div class="card">
                     <img src="{{$book->picture}}" alt="">
                 </div>
